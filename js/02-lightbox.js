@@ -22,15 +22,10 @@ const markup = galleryItems.map(({ preview, original, description }) =>
 galleryContainer.insertAdjacentHTML("beforeend", markup);
 console.log(galleryItems);
 
-galleryContainer.addEventListener('click', handlerClick)
-
-function handlerClick(e) {
-    e.preventDefault();
 
     const cardLigthBox = new SimpleLightbox('.gallery a', {
     captionPosition: 'bottom', captionsData: `alt`, captionDelay: 250});
-}
-
+console.log(cardLigthBox);
 
 
 

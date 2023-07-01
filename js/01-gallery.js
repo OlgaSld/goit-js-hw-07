@@ -17,7 +17,7 @@ console.log(galleryContainer);
 const markup = galleryItems.map(({ preview, original, description }) =>
     `<li class="gallery__item">
     <a href="${original}" class="gallery_link">
-    <img class="gallery_image" src="${preview}" alt="${description}" width="340" data-source="${original}"/>
+    <img class="gallery_image" src="${preview}" alt="${description}" width="368" data-source="${original}"/>
     </a>
     </li>`
 ).join("");
